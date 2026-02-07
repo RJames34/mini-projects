@@ -1,0 +1,194 @@
+
+/*Universal selector */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Container that holds every container on the website*/
+#page-wrapper{
+    width: 80vw;
+    background-color: rgb(254, 242, 155);
+    margin: 0 auto;
+}
+
+header{
+    padding: 1% 0 20px 3%;
+    color: Black;
+    font-size: calc(20px + 1.5%);
+    background-color: rgb(255, 101, 33);
+}
+
+/*Container that Holds the nav bar and main-wrapper*/
+#nav-main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+nav{
+    width: 30%;
+    background-color: rgb(255, 146, 63);
+}
+
+nav ul{
+    padding-left: 0;
+    list-style: none;
+}
+
+nav li{
+    width: 80%;
+    padding: 5%;
+    margin: 18% auto;
+    text-align: center;
+    background-color: rgb(254, 242, 155);
+    border-radius: 5px;
+    border: 3px solid rgb(255, 101, 33);
+}
+
+nav a{
+    font-size: calc(2px + 1.3vw);
+    text-decoration: none;
+    color:black;
+}
+
+#main-wrapper{
+    width: 70%;
+    height: 100vh;
+    text-align: center;
+    font-size: calc( 20px + 1.5%);
+    margin-top: 5%;
+}
+
+main h1{
+    color: rgb(255, 101, 33);
+    padding-bottom: 2%
+}
+
+main img{
+    max-width: 50%;
+    border:solid rgb(255, 101, 33) 4px;
+    margin-bottom: 5%;
+}
+
+footer{
+    background-color: rgb(255, 101, 33);
+    color: black;
+    height: 10vh;
+    padding: 5%;
+    text-align: center;
+}
+
+/*Styling for the Education,Certs, and Contact pages begin here*/
+
+/*Contains the two divs*/
+#school-info-wrapper, #school-info-wrapper-exp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    gap: 10%;
+    font-size: calc(30px + 1.5%);
+    text-align: left;
+    padding-left: 5%;
+}
+
+#school-info-wrapper-exp{
+    height: 100vh;
+}
+
+.school h3{
+    margin-bottom: 3%;
+}
+
+.school-styler{
+    background-color: rgb(255, 101, 33);
+    width: 10px;
+    height: 40px;
+    margin-right: 3%
+}
+
+.school-information {
+    display: flex;
+    flex-direction: row;
+}
+
+.school-information li {
+    font-size: calc(20px + 1.5%);
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+/*Style the anchor tags for the Contact Page*/
+.contact-a{
+    text-decoration: none;
+    color: rgb(255, 101, 33);;
+}
+
+/*Styling for the Projects page begins here*/
+
+.inputs h2{
+   padding: 5%;
+}
+
+.inputs  input{
+    font-size: calc(20px + 1.5%);
+    height:10vh;
+    width: 10vw;
+    border-radius: 5px;
+    border: 5px solid rgb(255, 101, 33);
+}
+
+.buttons button{
+    background-color: rgb(255, 101, 33);
+    margin: 2%;
+    height:5vh;
+    width: 15vw;
+    border-radius: 5px;
+    border: 5px solid rgb(255, 101, 33);
+    align-items: center;
+    font-size: calc(20px + 1.5%);
+}
+
+#project-main h3{
+    margin: 5%;
+}
+
+@media  screen and (max-width: 750px) {
+
+    #nav-main{
+        flex-direction: column;
+    }
+
+    nav, #main-wrapper{
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        Justify-content: space-between;
+    }
+
+    nav li{
+        font-size: calc(3px + 3vw);
+        width: 18%;
+        padding: 2%;
+        margin: 1%;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    #main-wrapper{
+        height: 170vh;
+    }
+
+    .buttons {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
